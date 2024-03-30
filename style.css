@@ -1,0 +1,48 @@
+canvas {
+  display: block; /*Превращаем canvas в блочный элемент*/
+  border: 2px solid black; /* Устанавливаем рамку вокруг элемента canvas */
+  background-image: url("pngwing.com.png"); /* Устанавливаем фоновое изображение для элемента canvas */
+  background-size: cover; /* Устанавливаем размер фонового изображения так, чтобы оно полностью покрывало элемент canvas */
+}
+
+.app {
+  display: flex; /* Используем flexbox для управления расположением элементов */
+  justify-content: center; /* Выравниваем элементы по горизонтали по центру */
+  align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+.end-game {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.dialog {
+  padding: 20px;
+  width: 60%;
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 28px;
+  color: beige;
+}
+.restart {
+  outline: none;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: beige;
+}
+.end-game__open {
+  visibility: visible;
+}
